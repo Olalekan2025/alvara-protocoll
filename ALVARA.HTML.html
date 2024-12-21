@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive Website Example">
+  <title>Responsive Alvara Protocol</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #6a1b9a; /* Purple background */
+      color: #fff;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      font-size: 16px; /* Base font size */
+    }
+
+    h1, h2, h3 {
+      font-family: 'Arial', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* About Section */
+    section.about {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #6a1b9a; /* Purple background */
+    }
+
+    section.about h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    section.about p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #4a148c; /* Darker Purple for contrast */
+    }
+
+    .feature {
+      background-color: #333;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      color: #fff;
+      margin: 10px;
+    }
+
+    /* Testnet Link Section */
+    .testnet-link {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #6a1b9a;
+    }
+
+    .cta-button {
+      background-color: #ff6347;
+      border: none;
+      padding: 15px 30px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 50px;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #e5533f;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #333;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      section.about h2 {
+        font-size: 2rem;
+      }
+
+      section.about p {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section.about h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+
+      section.about p {
+        font-size: 1rem;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- About Section (First Section) -->
+  <section class="about">
+    <h2>About Alvara Protocol</h2>
+    <p>Alvara Protocol is a decentralized and secure solution for managing digital assets and applications. Built on blockchain technology, it ensures trust, transparency, and security.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <!-- Alvara Features -->
+    <div class="feature">
+      <h3>Decentralized</h3>
+      <p>Alvara Protocol operates on a decentralized network, ensuring no single point of failure and providing true autonomy to users.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure</h3>
+      <p>Security is paramount. With advanced cryptographic methods and robust encryption, your data and assets are always protected.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable</h3>
+      <p>The Alvara Protocol is designed to scale, allowing seamless growth and adaptation to increasing demands.</p>
+    </div>
+    <div class="feature">
+      <h3>Low Fees</h3>
+      <p>Transaction fees are minimized, ensuring that users get the most out of their digital assets without unnecessary costs.</p>
+    </div>
+
+    <!-- BTS Features -->
+    <div class="feature">
+      <h3>BTS Smart Contracts</h3>
+      <p>With BTS Smart Contracts, users can create secure and automated decentralized applications (DApps) without the need for intermediaries.</p>
+    </div>
+    <div class="feature">
+      <h3>BTS Asset Management</h3>
+      <p>Manage and trade a wide range of digital assets with ease. BTS allows the creation of custom digital assets backed by real-world value.</p>
+    </div>
+    <div class="feature">
+      <h3>BTS High Throughput</h3>
+      <p>BTS can handle thousands of transactions per second, making it ideal for large-scale applications that require high performance and low latency.</p>
+    </div>
+    <div class="feature">
+      <h3>BTS Decentralized Exchange</h3>
+      <p>Trade digital assets directly on a decentralized exchange (DEX), ensuring no central authority controls your trades.</p>
+    </div>
+
+    <!-- $ALVA Token Feature -->
+    <div class="feature">
+      <h3>$ALVA Token</h3>
+      <p>The $ALVA token is the native currency of the Alvara Protocol. It is used for transaction fees, governance participation, and as a store of value within the ecosystem.</p>
+      <ul>
+        <li><strong>Transaction Fees:</strong> $ALVA is used to pay for transaction fees on the Alvara network.</li>
+        <li><strong>Governance:</strong> Holders of $ALVA can participate in governance decisions, enabling decentralized decision-making.</li>
+        <li><strong>Store of Value:</strong> The $ALVA token is designed as a store of value, with a deflationary model that helps increase scarcity over time.</li>
+        <li><strong>Staking:</strong> Token holders can stake $ALVA to earn rewards and participate in securing the network.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Testnet Link Section -->
+  <section class="testnet-link">
+    <h2>Start Exploring Alvara Protocol</h2>
+    <p>Test the protocol on the testnet now!</p>
+    <a href="https://testnet.alvara.xyz/#/bts-factory" target="_blank">
+      <button class="cta-button">Visit BTS Factory Testnet</button>
+    </a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Alvara. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Example JavaScript functionality: Smooth Scroll
+    const ctaButton = document.querySelector('.cta-button');
+    ctaButton.addEventListener('click', function() {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
